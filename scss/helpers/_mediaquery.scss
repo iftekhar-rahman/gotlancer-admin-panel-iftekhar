@@ -7,7 +7,7 @@
     }
 }
 @mixin mx-mobile-xs {
-    @media(max-width: 479px) {
+    @media(max-width: 370px) {
         @content;
     }
 }
