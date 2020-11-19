@@ -1,0 +1,479 @@
+/*=============== Header CSS ==================*/
+// .header{
+//     height: 80px;
+//     @include all-below-med{
+//         height: auto;
+//     }
+// }
+.divider{
+    height: 80px;
+}
+.header-area {
+    background: #192A3E;
+    height: 80px;
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+        @include all-below-mobile-lg{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .offcanvas-menu-trigger {
+        width: 50px;
+        height: 100%;
+        border-right: 1px solid #314963;
+        @include all-mx-mobile{
+            width: 35px;
+        }
+        .menu-trigger {
+            padding: 10px 30px 10px 0;
+            cursor: pointer;
+            @include all-mx-mobile{
+                padding: 10px 10px 10px 0
+            }
+            &:hover{
+                .bar-2, .bar-3{
+                    width: 20px;
+                }
+            }
+            span {
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                border-radius: 50px;
+                margin: 4px 0;
+                @extend %basetransition2;
+            }
+            .bar-2 {
+                width: 16px;
+                background: #74B95C;
+            }
+            .bar-3 {
+                width: 12px;
+            }
+            &.active {
+                .bar-1 {
+                    transform: rotate(45deg);
+                    position: relative;
+                    top: 3px;
+                }
+                .bar-3 {
+                    transform: rotate(-45deg);
+                    position: relative;
+                    top: -3px;
+                    width: 20px;
+                }
+                .bar-2 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .site-logo {
+        margin-left: 15px;
+        margin-right: 40px;
+        @include mx-desktops{
+            margin-left: 10px;
+            margin-right: 15px;
+        }
+        @include all-mx-mobile{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        img {
+            max-width: 153px;
+            @include all-below-mobile-lg{
+                max-width: 130px;
+            }
+            @include all-mx-mobile{
+                max-width: 120px;
+            }
+        }
+    } 
+    .header-right-section {
+        .notification-link {
+            a {
+                color: #ADBDCD;
+                font-size: 26px;
+                position: relative;
+                .count {
+                    position: absolute;
+                    right: -11px;
+                    top: 3px;
+                    width: 22px;
+                    height: 18px;
+                    background: #71B659;
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: center;
+                    border-radius: 2px;
+                }
+            }
+        }
+        .dropdown {
+            button {
+                border: 0;
+                padding: 0;
+                border-radius: 50px;
+                margin-left: 21px;
+                img {
+                    max-width: 40px;
+                    border-radius: 50px;
+                }
+            }
+            .dropdown-menu {
+                width: 200px;
+                border-radius: 4px;
+                padding: 13px 0 13px;
+                box-shadow: 0px 0px 6px -2px rgba(49, 73, 99, 0.59);
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transform: inherit !important;
+                top: 70px !important;
+                left: -138px !important;
+                border: 0;
+                @extend %basetransition2;
+                &.show{
+                    top: 45px !important;
+                    opacity: 1;
+                    visibility: visible;
+                }
+                a{
+                    display: block;
+                    padding: 6px 15px 6px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #314963;
+                    &:hover{
+                        @extend %primary-color;
+                        background-color: #F2F5FA;
+                    }
+                }
+            }
+        }
+    }
+    .menu-expand {
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 4px;
+        transition: all .3s ease;
+    }
+}
+
+
+.main-menu-trigger-wrap {
+    margin-left: 20px;
+    height: 100%;
+    border-left: 1px solid #314963;
+    padding-left: 20px;
+    @include all-mx-mobile{
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .main-menu-trigger {
+        width: 30px;
+        cursor: pointer;
+        height: 26px;
+        // padding: 6px 3px;
+        span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50px;
+            margin: 5px 0;
+            transition: all .7s ease;
+        }
+        &.active{
+            span {
+                &.bar-1 {
+                    transform: rotate(45deg);
+                    position: relative;
+                    bottom: -7px;
+                }
+                &.bar-2 {
+                    display: none;
+                }
+                &.bar-3 {
+                    transform: rotate(-45deg);
+                    position: relative;
+                    top: 0px;
+                }
+            }
+        }
+    }
+}
+
+.mainmenu{
+    .menu-label {
+        position: absolute;
+        right: 12px;
+        top: -6px;
+        color: #fff;
+        width: 38px;
+        height: 18px;
+        background: #71B659;
+        text-align: center;
+        border-radius: 2px;
+        line-height: 18px;
+        font-size: 12px;
+        &:after {
+            position: absolute;
+            right: 6px;
+            bottom: -4px;
+            border-right: 8px transparent;
+            border-left: 8px solid transparent;
+            border-bottom: 8px solid #71B659;
+            content: "";
+            transform: rotate(45deg);
+        }
+        &.alert-label{
+            background-color: #FF5555;
+            &:after {
+                border-bottom: 8px solid #FF5555;
+            }
+        }
+    }
+    .dropdown-label {
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        background: #74B95C;
+        color: #fff;
+        padding: 0px 6px;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+}
+.mainmenu ul > li {
+    position: relative;
+    display: inline-block;
+}
+.mainmenu ul li:hover > a{
+    @extend %primary-color;
+}
+.mainmenu ul li:hover .menu-expand{
+    @extend %primary-color;
+}
+.mainmenu ul > li > a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 10px;
+    display: block;
+    @include mx-desktops{
+        font-size: 14px;
+        padding: 15px 8px;
+    }
+}
+
+// Dropdown CSS
+.mainmenu ul li ul {
+    left: -63px;
+    top: 80px;
+    width: 245px;
+    z-index: 999;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px -2px rgba(49, 73, 99, 0.59);
+    @extend %posabsolute;
+    @extend %white-bg-color;
+    @extend %invisible;
+    @extend %basetransition2;
+    @include all-below-med{
+        transition: inherit;
+    }
+}
+.mainmenu ul li ul ul {
+    left: 100%;
+    top: 45px;
+    @extend %invisible;;
+}
+.mainmenu ul li:hover > ul {
+    top: 55px;
+    @extend %visible;
+}
+.mainmenu ul li ul li {
+    @extend %displayblock;
+    @extend %basetransition2;
+}
+.mainmenu ul li ul li a {
+    padding: 5px 15px 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #192A3E;
+    @extend %displayblock;
+}
+.mainmenu ul li ul li:hover > a {
+    background-color: #F2F5FA;
+    @extend %primary-color;
+}
+.mainmenu ul li ul li:hover ul {
+    top: 0;
+}
+
+// Mobile Main Menu
+.mainmenu {
+    @include all-below-med{
+        position: fixed;
+        right: -340px;
+        top: 80px;
+        background: #fff;
+        z-index: 999;
+        height: 100%;
+        width: 320px;
+        padding: 25px 20px 30px 30px;
+        box-shadow: 0px 0px 6px -2px rgba(49, 73, 99, 0.59);
+        transition: all .7s ease;
+        &.active{
+            right: 0;
+        }
+        ul li {
+            display: block;
+            margin: 4px 0;
+        }
+        ul li a {
+            color: #192A3E;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 3px 0;
+        }
+        ul li .menu-label {
+            display: none;
+        }
+        ul li ul {
+            position: relative;
+            left: 0;
+            top: 0 !important;
+            opacity: 1;
+            visibility: visible;
+            box-shadow: none;
+            width: auto;
+            padding: 5px 0;
+        }
+        ul li ul li a {
+            padding: 3px 0;
+        }
+        ul li ul li a .dropdown-label {
+            top: 4px;
+        }
+    }
+}
+// .offcanvas-menu 
+.offcanvas-menu {
+    position: fixed;
+    left: -380px;
+    top: 80px;
+    background: #fff;
+    width: 340px;
+    z-index: 999;
+    padding: 25px 20px 30px 30px;
+    box-shadow: 0px 0px 6px -2px rgba(49, 73, 99, 0.59);
+    overflow-y: scroll;
+    height: 100%;
+    @extend %basetransition3;
+    &.active{
+        left: 0;
+    }
+    ul {
+        li {
+            position: relative;
+            margin: 4px 0;
+            a {
+                color: #192A3E;
+                font-weight: 500;
+                padding: 3px 0;
+                display: block;
+                &:hover{
+                    @extend %primary-color;
+                }
+            }
+        }
+    }
+    .menu-label {
+        position: absolute;
+        right: 0;
+        top: 4px;
+        font-size: 13px;
+        color: #74B95C;
+        display: inline-block;
+    }
+    .menu-label.fill {
+        background: #74B95C;
+        color: #fff;
+        padding: 0 4px;
+        border-radius: 50px;
+    }
+}
+
+
+// Sticky Header with smooth animation
+// .header-area{
+//     @include desktops{
+//         &.fixed {
+//             width: 100%;
+//             position: fixed;
+//             top: 0;
+//             left: 0;
+//             animation:slide-down 0.7s;
+//             z-index: 99999;
+//             box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+//             &:after {
+//                 position: absolute;
+//                 content: "";
+//                 width: 100%;
+//                 height: 100%;
+//                 left: 0;
+//                 top: 0;
+//                 z-index: -1;
+//                 opacity: 1;
+//             }
+//         }
+//     }
+//     @include all-below-med{
+//         position: fixed;
+//         right: -320px;
+//         top: 0;
+//         width: 320px;
+//         z-index: 99999999;
+//         height: 100%;
+//         background: #fff;
+//         padding: 0 10px;
+//         text-align: center;
+//         transition: all .5s ease;
+//         // &.active{
+//         //     right: 0;
+//         // }
+//         // .site-logo {
+//         //     height: 70px;
+//         //     margin: 0 auto;
+//         //     margin-top: 10px;
+//         // }
+//         // .mainmenu {
+//         //     width: 100%;
+//         // }
+//         // .mainmenu ul>li {
+//         //     display: block;
+//         //     border-bottom: 1px solid #E6E6E6;
+//         // }
+//         // .mainmenu ul>li>a {
+//         //     padding: 15px 15px;
+//         // }
+        
+//     }
+// }
+// @keyframes slide-down {
+//     0% {
+//         // opacity: 0;
+//         transform: translateY(-100%);
+//     } 
+//     100% {
+//         // opacity: 1;
+//         transform: translateY(0);
+//     } 
+// }

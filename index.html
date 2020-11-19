@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Admin Panel</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <!-- <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/nice-select.css" rel="stylesheet"> -->
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="offcanvas-menu">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Freelancers <span class="menu-label">9,541,220</span></a></li>
+                <li><a href="#">Buyers <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Account Suspended <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Rejected Freelancers <span class="menu-label">141,220</span></a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Membership Settings</a></li>
+                <li><a href="#">Active Subscribers <span class="menu-label"></span></a></li>
+                <li><a href="#">Proposal Credit</a></li>
+                <li><a href="#">All Jobs <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Active Contracts <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Support Ticket <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Dispute Management <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Exam Management <span class="menu-label">1,220</span></a></li>
+                <li><a href="#">Manage Category</a></li>
+                <li><a href="#">Manage Skills</a></li>
+                <li><a href="#">Manage Hire Page</a></li>
+                <li><a href="#">Manage Category Page</a></li>
+                <li><a href="#">Freelancer By Country Page</a></li>
+                <li><a href="#">FAQ Management</a></li>
+                <li><a href="#">Legal Pages</a></li>
+                <li><a href="#">Bugs Report <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Staffs <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Profit History</a></li>
+                <li><a href="#">Transection History</a></li>
+            </ul>
+        </div>
+        
+        <div class="site-wrapper">
+            <!-- header starts -->
+            <div class="header fixed-top">
+                <div class="header-area">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col h-100">
+                                <div class="header-left-section d-flex align-items-center h-100">
+                                    <div class="offcanvas-menu-trigger d-flex align-items-center">
+                                        <div class="menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="site-logo">
+                                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                                    </div>
+                                    <div class="mainmenu off-canvas-nav">
+                                        <ul>
+                                            <li class="menu-item-has-children">
+                                                <span class="menu-label">123</span>
+                                                <a href="#">Approvals</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Pending Freelancers <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Payments Approval</a></li>
+                                                    <li><a href="#">Bid credit payment</a></li>
+                                                    <li><a href="#">Subscription payment</a></li>
+                                                    <li><a href="#">Due Payment</a></li>
+                                                    <li><a href="#">Invoice Payment</a></li>
+                                                    <li><a href="#">Earning Approval <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Pending KYC <span class="dropdown-label">123</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label alert-label">123</span><a href="#">Unpaid Invoice</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Withdrawals</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Nagative Balance</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Renewals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header-right-section d-flex justify-content-end align-items-center h-100">
+                                    <div class="notification-link">
+                                        <a href="#"><i class="fas fa-bell"></i> <span class="count">1</span></a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/user-1.svg" alt="">
+                                        </button>
+                                        <div class="dropdown-menu" >
+                                            <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
+                                            <a href="#Profile"><i class="fas fa-user"></i> My Profile</a>
+                                            <a href="#Logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-trigger-wrap d-lg-none d-flex align-items-center">
+                                        <div class="main-menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header ends -->
+
+            <div class="divider"></div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div style="height: 50px;"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas totam fugiat, corporis, repellendus accusamus autem fugit ad pariatur culpa labore libero soluta expedita, officiis sint. Hic odit, amet ducimus nisi consequatur voluptate repellendus asperiores beatae possimus odio aut neque praesentium eius commodi expedita repellat reprehenderit, harum eaque eveniet deserunt fugiat!</p>
+                        <div style="height: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+                        
+                    
+        </div>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
