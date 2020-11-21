@@ -18,6 +18,10 @@
             color: #1bc5bd;
             background-color: #c9f7f5;
         }
+        &.label-light-delivered{
+            color:#f64e60;
+            background-color: #ffe2e5;
+        }
     }
 }
 .table-content-wrap{
@@ -57,7 +61,14 @@
             }
         }
     }
-    
+    .right-content {
+        .boxed-btn {
+            height: 32px;
+            line-height: 32px;
+            padding: 0px 14px;
+            margin-right: 15px;
+        }
+    }
 }
 
 // table-area
@@ -157,12 +168,33 @@
                         }
                     }
                 }
+                .datatable-cell.number{
+                    width: 5%;
+                }
+                .datatable-cell.customer{
+                    width: 25%;
+                }
+                .datatable-cell.country{
+                    width: 15%;
+                }
+                .datatable-cell.ship-date{
+                    width: 15%;
+                }
+                .datatable-cell.company-name{
+                    width: 18%;
+                }
+                .datatable-cell.status{
+                    width: 12%;
+                }
+                .datatable-cell.action{
+                    width: 10%;
+                }
             }
         }
     }  
 }
-.datatable-row th:nth-child(1), .datatable-row td:nth-child(1) {
-    width: 70px;
+.datatable-row th:nth-child(1) {
+    width: 5%;
 }
 .table-content-wrap{
     .table-header-content {
