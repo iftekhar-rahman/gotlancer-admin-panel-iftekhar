@@ -8,16 +8,18 @@
 .divider{
     height: 80px;
 }
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include all-below-mobile-lg{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 .header-area {
     background: #192A3E;
     height: 80px;
     .container-fluid {
-        padding-left: 30px;
-        padding-right: 30px;
-        @include all-below-mobile-lg{
-            padding-left: 15px;
-            padding-right: 15px;
-        }
         .col-auto{
             @include mx-mobile-xs{
                 padding-left: 0px;
@@ -124,48 +126,7 @@
                 }
             }
         }
-        .dropdown {
-            button {
-                border: 0;
-                padding: 0;
-                border-radius: 50px;
-                margin-left: 21px;
-                img {
-                    max-width: 40px;
-                    border-radius: 50px;
-                }
-            }
-            .dropdown-menu {
-                width: 200px;
-                border-radius: 4px;
-                padding: 13px 0 13px;
-                box-shadow: 0px 0px 6px -2px rgba(49, 73, 99, 0.59);
-                display: block;
-                opacity: 0;
-                visibility: hidden;
-                transform: inherit !important;
-                top: 70px !important;
-                left: -138px !important;
-                border: 0;
-                @extend %basetransition2;
-                &.show{
-                    top: 45px !important;
-                    opacity: 1;
-                    visibility: visible;
-                }
-                a{
-                    display: block;
-                    padding: 6px 15px 6px;
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: #314963;
-                    &:hover{
-                        @extend %primary-color;
-                        background-color: #F2F5FA;
-                    }
-                }
-            }
-        }
+        
     }
     .menu-expand {
         position: absolute;
@@ -393,6 +354,9 @@
     overflow-y: scroll;
     height: 100%;
     @extend %basetransition3;
+    @include mx-mobile-xs{
+        width: 320px;
+    }
     &.active{
         left: 0;
     }
@@ -426,70 +390,3 @@
         border-radius: 50px;
     }
 }
-
-
-// Sticky Header with smooth animation
-// .header-area{
-//     @include desktops{
-//         &.fixed {
-//             width: 100%;
-//             position: fixed;
-//             top: 0;
-//             left: 0;
-//             animation:slide-down 0.7s;
-//             z-index: 99999;
-//             box-shadow: 0 1px 6px rgba(57,73,76,0.35);
-//             &:after {
-//                 position: absolute;
-//                 content: "";
-//                 width: 100%;
-//                 height: 100%;
-//                 left: 0;
-//                 top: 0;
-//                 z-index: -1;
-//                 opacity: 1;
-//             }
-//         }
-//     }
-//     @include all-below-med{
-//         position: fixed;
-//         right: -320px;
-//         top: 0;
-//         width: 320px;
-//         z-index: 99999999;
-//         height: 100%;
-//         background: #fff;
-//         padding: 0 10px;
-//         text-align: center;
-//         transition: all .5s ease;
-//         // &.active{
-//         //     right: 0;
-//         // }
-//         // .site-logo {
-//         //     height: 70px;
-//         //     margin: 0 auto;
-//         //     margin-top: 10px;
-//         // }
-//         // .mainmenu {
-//         //     width: 100%;
-//         // }
-//         // .mainmenu ul>li {
-//         //     display: block;
-//         //     border-bottom: 1px solid #E6E6E6;
-//         // }
-//         // .mainmenu ul>li>a {
-//         //     padding: 15px 15px;
-//         // }
-        
-//     }
-// }
-// @keyframes slide-down {
-//     0% {
-//         // opacity: 0;
-//         transform: translateY(-100%);
-//     } 
-//     100% {
-//         // opacity: 1;
-//         transform: translateY(0);
-//     } 
-// }
