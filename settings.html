@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Settings</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="offcanvas-menu">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Freelancers <span class="menu-label">9,541,220</span></a></li>
+                <li><a href="#">Buyers <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Account Suspended <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Rejected Freelancers <span class="menu-label">141,220</span></a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Membership Settings</a></li>
+                <li><a href="#">Active Subscribers <span class="menu-label"></span></a></li>
+                <li><a href="#">Proposal Credit</a></li>
+                <li><a href="#">All Jobs <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Active Contracts <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Support Ticket <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Dispute Management <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Exam Management <span class="menu-label">1,220</span></a></li>
+                <li><a href="#">Manage Category</a></li>
+                <li><a href="#">Manage Skills</a></li>
+                <li><a href="#">Manage Hire Page</a></li>
+                <li><a href="#">Manage Category Page</a></li>
+                <li><a href="#">Freelancer By Country Page</a></li>
+                <li><a href="#">FAQ Management</a></li>
+                <li><a href="#">Legal Pages</a></li>
+                <li><a href="#">Bugs Report <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Staffs <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Profit History</a></li>
+                <li><a href="#">Transection History</a></li>
+            </ul>
+        </div>
+        
+        <div class="site-wrapper">
+            <!-- header starts -->
+            <div class="header fixed-top">
+                <div class="header-area">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col h-100">
+                                <div class="header-left-section d-flex align-items-center h-100">
+                                    <div class="offcanvas-menu-trigger d-flex align-items-center">
+                                        <div class="menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="site-logo">
+                                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                                    </div>
+                                    <div class="mainmenu off-canvas-nav">
+                                        <ul>
+                                            <li class="menu-item-has-children">
+                                                <span class="menu-label">123</span>
+                                                <a href="#">Approvals</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Pending Freelancers <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Payments Approval</a></li>
+                                                    <li><a href="#">Bid credit payment</a></li>
+                                                    <li><a href="#">Subscription payment</a></li>
+                                                    <li><a href="#">Due Payment</a></li>
+                                                    <li><a href="#">Invoice Payment</a></li>
+                                                    <li><a href="#">Earning Approval <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Pending KYC <span class="dropdown-label">123</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label alert-label">123</span><a href="#">Unpaid Invoice</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Withdrawals</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Nagative Balance</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Renewals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header-right-section d-flex justify-content-end align-items-center h-100">
+                                    <div class="notification-link">
+                                        <a href="#"><i class="fas fa-bell"></i> <span class="count">1</span></a>
+                                    </div>
+                                    <div class="custom-dropdown dropdown">
+                                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/user-1.svg" alt="">
+                                        </button>
+                                        <div class="dropdown-menu" >
+                                            <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
+                                            <a href="#Profile"><i class="fas fa-user"></i> My Profile</a>
+                                            <a href="#Logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-trigger-wrap d-lg-none d-flex align-items-center">
+                                        <div class="main-menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header ends -->
+
+            <div class="divider"></div>
+
+            <!-- settings-area starts -->
+            <div class="settings-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="settings-header">
+                                <h4 class="section-title">Global Settings</h4>
+                                <span class="date">Date: 21-11-2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-left-3">
+                            <div class="nav sidebar flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="active" id="v-pills-one-tab" data-toggle="pill" href="#v-pills-one" role="tab" aria-controls="v-pills-one" aria-selected="true">
+                                    SEO Settings
+                                </a>
+                                <a class="" id="v-pills-two-tab" data-toggle="pill" href="#v-pills-two" role="tab" aria-controls="v-pills-two" aria-selected="false">
+                                    Logo and favicon
+                                </a>
+                                <a class="" id="v-pills-three-tab" data-toggle="pill" href="#v-pills-three" role="tab" aria-controls="v-pills-three" aria-selected="false">
+                                    Country &amp; Currency
+                                </a>
+                                <a class="" id="v-pills-four-tab" data-toggle="pill" href="#v-pills-four" role="tab" aria-controls="v-pills-four" aria-selected="false">
+                                    Mail Settings
+                                </a>
+                                <a class="" id="v-pills-five-tab" data-toggle="pill" href="#v-pills-five" role="tab" aria-controls="v-pills-five" aria-selected="false">
+                                    Support Information
+                                </a>
+                                <a class="" id="v-pills-six-tab" data-toggle="pill" href="#v-pills-six" role="tab" aria-controls="v-pills-six" aria-selected="false">
+                                    Add Social Link
+                                </a>
+                                <a class="" id="v-pills-seven-tab" data-toggle="pill" href="#v-pills-seven" role="tab" aria-controls="v-pills-seven" aria-selected="false">
+                                    Withdrawal Method
+                                </a>
+                                <a class="" id="v-pills-eight-tab" data-toggle="pill" href="#v-pills-eight" role="tab" aria-controls="v-pills-eight" aria-selected="false">
+                                    Update Scripts
+                                </a>
+                                <a class="" id="v-pills-nine-tab" data-toggle="pill" href="#v-pills-nine" role="tab" aria-controls="v-pills-nine" aria-selected="false">
+                                    Footer
+                                </a>
+                                <a class="" id="v-pills-ten-tab" data-toggle="pill" href="#v-pills-ten" role="tab" aria-controls="v-pills-ten" aria-selected="false">
+                                    Fees and Charges
+                                </a>
+                                <a class="" id="v-pills-eleven-tab" data-toggle="pill" href="#v-pills-eleven" role="tab" aria-controls="v-pills-eleven" aria-selected="false">
+                                    Payment Gateway
+                                </a>
+                                <a class="" id="v-pills-twelve-tab" data-toggle="pill" href="#v-pills-twelve" role="tab" aria-controls="v-pills-twelve" aria-selected="false">
+                                    Bank Details
+                                </a>
+                                <a class="" id="v-pills-thirteen-tab" data-toggle="pill" href="#v-pills-thirteen" role="tab" aria-controls="v-pills-thirteen" aria-selected="false">
+                                    Maintanance Mood
+                                </a>
+                            </div>
+                            <!-- nav ends -->
+                        </div>
+                        <div class="col-right-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <!-- seo tab starts -->
+                                <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+                                    <form action="#"></form>
+                                        <div class="form-section seo-settings d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item">
+                                                        <h3>Landing Page Title **</h3>
+                                                        <input type="text" placeholder="Title here">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h3>Meta tag**</h3>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Meta tag here"></textarea>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h3>Meta Keywords**</h3>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Details here"></textarea>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h3>Meta Descriptions**</h3>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Details here"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item">
+                                                        <h3>About Page Title **</h3>
+                                                        <input type="text" placeholder="Title here">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h3>Meta tag**</h3>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Meta tag here"></textarea>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h3>Meta Keywords**</h3>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Details here"></textarea>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h3>Meta Descriptions**</h3>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Details here"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- seo tab ends -->
+                                <!-- logo-and-favicon tab starts -->
+                                <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+                                    <form action="#">    
+                                        <div class="form-section logo-and-favicon d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item image-preview-box">
+                                                        <h4 class="section-title">Logo (PNG and SVG)</h4>
+                                                        <div class="image-preview text-center">
+                                                            <span>Preview</span>
+                                                        </div>
+                                                        <p>Upload size (200 X50)</p>
+                                                        <div class="upload-btn-wrapper">
+                                                            <button class="btn"><i class="fas fa-plus"></i> Add Logo</button>
+                                                            <input type="file" name="myfile" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item image-preview-box">
+                                                        <h4 class="section-title">Favicon (.ico)</h4>
+                                                        <div class="image-preview text-center">
+                                                            <span>Preview</span>
+                                                        </div>
+                                                        <p>Upload size (16x16)</p>
+                                                        <div class="upload-btn-wrapper">
+                                                            <button class="btn"><i class="fas fa-plus"></i> Add Favicon</button>
+                                                            <input type="file" name="myfile" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- logo-and-favicon tab ends -->
+                                 <!-- country-and-currency tab starts -->
+                                <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">
+                                    <div class="form-section country-and-currency">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-lg-3 col1">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Country List</h4>
+                                                        <div class="country-list">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="country1" name="country1" value="Pakisthan">
+                                                                <label for="country1"> Pakisthan</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="country2" name="country2" value="United State">
+                                                                <label for="country2"> United State</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="country3" name="country3" value="United Kingdom">
+                                                                <label for="country3"> United Kingdom</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col2">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Base Currency</h4>
+                                                        <input type="text" placeholder="USD" name="USD">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Symbol</h4>
+                                                        <input type="text" placeholder="$" name="symbol">
+                                                    </div>
+                                                    <div class="single-form-item mb-4">
+                                                        <h4 class="section-title">Rate</h4>
+                                                        <input type="text" placeholder="1" name="rate">
+                                                    </div>
+                                                    <h4 class="section-title colored-title">For Indian users</h4>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Base Currency</h4>
+                                                        <input type="text" placeholder="INR" name="INR">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Symbol</h4>
+                                                        <input type="text" placeholder="₹" name="symbol">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Rate</h4>
+                                                        <input type="text" placeholder="70" name="rate">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col3">
+                                                    <div class="single-form-item mb-4">
+                                                        <h4 class="section-title colored-title">Payment Method</h4>
+                                                        <h4 class="section-title">If user from India</h4>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="paypal" name="paypal" value="paypal">
+                                                            <label for="paypal"> Paypal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="stripe" name="stripe" value="stripe">
+                                                            <label for="stripe"> Stripe</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="payu" name="payu" value="payu">
+                                                            <label for="payu"> Payu</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">For all other country</h4>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="paypal2" name="paypal2" value="paypal2">
+                                                            <label for="paypal2"> Paypal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="stripe2" name="stripe2" value="stripe2">
+                                                            <label for="stripe2"> Stripe</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="payu2" name="payu2" value="payu2">
+                                                            <label for="payu2"> Payu</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col4">
+                                                    <div class="form-save-btn text-right">
+                                                        <a href="#" class="boxed-btn">Save changes</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div><!-- country-and-currency tab ends -->
+                                <!-- mail-settings tab starts -->
+                                <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
+                                    <div class="form-section mail-settings">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="single-form-item mb-5">
+                                                    <h4 class="section-title">SendGrid</h4>
+                                                    <form action="#">
+                                                        <input type="text" placeholder="Company" name="company"><br/>
+                                                        <input type="text" placeholder="Secrect Key" name="secrectkey"><br/>
+                                                        <input type="text" placeholder="Email From" name="emailfrom">
+                                                        <div class="form-save-btn mt-2">
+                                                            <a href="#" class="boxed-btn">Save changes</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="single-form-item">
+                                                    <h4 class="section-title">SendBlaster</h4>
+                                                    <form action="#">
+                                                        <input type="text" placeholder="Company" name="company"><br/>
+                                                        <input type="text" placeholder="Secrect Key" name="secrectkey"><br/>
+                                                        <input type="text" placeholder="Email From" name="emailfrom">
+                                                        <div class="form-save-btn mt-2">
+                                                            <a href="#" class="boxed-btn">Save changes</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- mail-settings tab ends -->
+                                 <!-- support-information tab starts -->
+                                <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
+                                    <form action="#">
+                                        <div class="form-section support-information d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Support Email</h4>
+                                                        <input type="email" placeholder="info@gotlancer.com" name="email">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Phone Number</h4>
+                                                        <input type="tel" placeholder="+1-123-456789" name="phone">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Tawk.to Link for Support</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Tawk.to Link for Deposit</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Live Support Online/Offline</h4>
+                                                        <div class="form-check">
+                                                            <input type="radio" id="online" name="onlinestatus" value="online">
+                                                            <label for="online"> Online</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="radio" id="offline" name="onlinestatus" value="offline">
+                                                            <label for="offline"> Offline</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">HQ Address</h4>
+                                                        <input type="text" placeholder="Address here" name="Address here">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">USA Branch Address</h4>
+                                                        <input type="text" placeholder="Address here" name="Branch">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Bangladesh Branch Address</h4>
+                                                        <input type="text" placeholder="Address here" name="Address here">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">UK Branch Address</h4>
+                                                        <input type="text" placeholder="Address here" name="Address here">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">China Branch Address</h4>
+                                                        <input type="text" placeholder="Address here" name="Address here">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- support-information tab ends -->
+                                 <!--  add-social-link tab starts -->
+                                <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
+                                    <form action="#">
+                                        <div class="form-section add-social-link d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Twitter URL</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Facebook URL</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">LinkedIn URL</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Instagram URL</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Youtube URL</h4>
+                                                        <input type="url" placeholder="URL" name="URL">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- add-social-link tab ends -->
+                                <!-- withdrawal-method tab starts -->
+                                <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
+                                    <form action="#">
+                                        <div class="form-section withdrawal-method d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <h4 class="section-title colored-title">For Indian users</h4>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Base Currency</h4>
+                                                        <input type="text" placeholder="INR" name="INR">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Symbol</h4>
+                                                        <input type="text" placeholder="₹" name="symbol">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Rate</h4>
+                                                        <input type="text" placeholder="70" name="rate">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Payment Method</h4>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indbank" name="indbank" value="indbank">
+                                                            <label for="indbank"> Bank</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indgooglepay" name="indgooglepay" value="indgooglepay">
+                                                            <label for="indgooglepay"> Google Pay</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indpaypal" name="indpaypal" value="indpaypal">
+                                                            <label for="indpaypal"> Paypal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indskrill" name="indskrill" value="indskrill">
+                                                            <label for="indskrill"> Skrill</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indpayoneer" name="indpayoneer" value="indpayoneer">
+                                                            <label for="indpayoneer"> Payoneer</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indnagad" name="indnagad" value="indnagad">
+                                                            <label for="indnagad"> Nagad</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="indbkash" name="indbkash" value="indbkash">
+                                                            <label for="indbkash"> BKash</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h4 class="section-title colored-title">For Bangladeshi users</h4>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Paid Currency</h4>
+                                                        <input type="text" placeholder="BDT" name="BDT">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Symbol</h4>
+                                                        <input type="text" placeholder="₹" name="symbol">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Rate</h4>
+                                                        <input type="text" placeholder="80" name="rate">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Payment Method</h4>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdbank" name="bdbank" value="bdbank">
+                                                            <label for="bdbank"> Bank</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdgooglepay" name="bdgooglepay" value="bdgooglepay">
+                                                            <label for="bdgooglepay"> Google Pay</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdpaypal" name="bdpaypal" value="bdpaypal">
+                                                            <label for="bdpaypal"> Paypal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdskrill" name="bdskrill" value="bdskrill">
+                                                            <label for="bdskrill"> Skrill</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdpayoneer" name="bdpayoneer" value="bdpayoneer">
+                                                            <label for="bdpayoneer"> Payoneer</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdnagad" name="bdnagad" value="bdnagad">
+                                                            <label for="bdnagad"> Nagad</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bdbkash" name="bdbkash" value="bdbkash">
+                                                            <label for="bdbkash"> BKash</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h4 class="section-title colored-title">For Other Country</h4>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Paid Currency</h4>
+                                                        <input type="text" placeholder="USD" name="USD">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Symbol</h4>
+                                                        <input type="text" placeholder="$" name="symbol">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Rate</h4>
+                                                        <input type="text" placeholder="1" name="rate">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Payment Method</h4>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othbank" name="othbank" value="othbank">
+                                                            <label for="othbank"> Bank</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othgooglepay" name="othgooglepay" value="othgooglepay">
+                                                            <label for="othgooglepay"> Google Pay</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othpaypal" name="othpaypal" value="othpaypal">
+                                                            <label for="othpaypal"> Paypal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othskrill" name="othskrill" value="othskrill">
+                                                            <label for="othskrill"> Skrill</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othpayoneer" name="othpayoneer" value="othpayoneer">
+                                                            <label for="othpayoneer"> Payoneer</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othnagad" name="othnagad" value="othnagad">
+                                                            <label for="othnagad"> Nagad</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="othbkash" name="othbkash" value="othbkash">
+                                                            <label for="othbkash"> BKash</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- withdrawal-method tab ends -->
+                                <!-- update-scripts tab starts -->
+                                <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">
+                                    <form action="#">
+                                        <div class="form-section update-scripts d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Google Capcha</h4>
+                                                        <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                        <input type="text" placeholder="Public key" name="Public key">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn mt-2">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- update-scripts tab ends -->
+                                <!-- footer tab starts -->
+                                <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
+                                    <form action="#">
+                                        <div class="form-section footer d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-6 pr-5">
+                                                    <div class="single-form-item image-preview-box mb-4">
+                                                        <h4 class="section-title">Logo (PNG and SVG)</h4>
+                                                        <div class="image-preview text-center">
+                                                            <span>Preview</span>
+                                                        </div>
+                                                        <p>Upload size (200 X50)</p>
+                                                        <div class="upload-btn-wrapper">
+                                                            <button class="btn"><i class="fas fa-plus"></i> Add Logo</button>
+                                                            <input type="file" name="myfile" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Before login</h4>
+                                                        <div class="duplicator">
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn">+ Add New</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 pr-4 pl-5">
+                                                    <div class="single-form-item mb-5">
+                                                        <h4 class="section-title">Buyer Footer</h4>
+                                                        <div class="duplicator">
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn">+ Add New</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Freelancer Footer</h4>
+                                                        <div class="duplicator">
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <div class="row single-row position-relative">
+                                                                <div class="col-6 pr-2">
+                                                                    <input type="text" placeholder="Title" name="Title">
+                                                                </div>
+                                                                <div class="col-6 pl-2">
+                                                                    <input type="url" placeholder="URL" name="URL">
+                                                                </div>
+                                                                <span class="close-icon"><i class="fas fa-times"></i></span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn">+ Add New</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn mt-2">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div> <!-- footer tab ends -->
+                                 <!-- tab-pane starts -->
+                                <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
+                                    <form action="#">
+                                        <div class="form-section fees-and-charges d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Gotlancer Jobs fees (%)</h4>
+                                                        <input type="text" placeholder="5" name="Jobs">
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Transection fees (%)</h4>
+                                                        <input type="text" placeholder="3" name="fees">
+                                                    </div>
+                                                    <h4 class="section-title">Dispute Fee</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="fee">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <h4 class="section-title">Withdraw Fee (%)</h4>
+                                                        <input type="text" placeholder="0" name="fee">
+                                                    </div>
+                                                    <h4 class="section-title">Exam Fee</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="fee">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <h4 class="section-title">Exam Retake Fee</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="fee">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h4 class="section-title colored-title">Membership Freelancer</h4>
+                                                    <h4 class="section-title">Free</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="free">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="jobfees" name="jobfees" value="jobfees">
+                                                            <label for="jobfees"> 20% Job Fees</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="weeklywithdrawal" name="weeklywithdrawal" value="weeklywithdrawal">
+                                                            <label for="weeklywithdrawal"> Weekly Withdrawal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="browsepage" name="browsepage" value="browsepage">
+                                                            <label for="browsepage"> Profile will show in browse page</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="totalearning" name="totalearning" value="totalearning">
+                                                            <label for="totalearning"> You can hide total earning</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="successrate" name="successrate" value="successrate">
+                                                            <label for="successrate"> You can hide success rate</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="skills" name="skills" value="skills">
+                                                            <label for="skills"> Add 10 skills</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="subcategory" name="subcategory" value="subcategory">
+                                                            <label for="subcategory"> Add 3 Sub Category</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bookmark" name="bookmark" value="bookmark">
+                                                            <label for="bookmark"> Bookmark  10 jobs</label>
+                                                        </div>
+                                                    </div>
+                                                    <h4 class="section-title">Pro</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="9.99" name="pro">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="jobfees2" name="jobfees2" value="jobfees2">
+                                                            <label for="jobfees2"> 5% Job Fees</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="dailywithdrawal" name="dailywithdrawal" value="dailywithdrawal">
+                                                            <label for="dailywithdrawal"> Daily Withdrawal</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="browsepage2" name="browsepage2" value="browsepage2">
+                                                            <label for="browsepage2"> Profile will show in browse page</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="totalearning2" name="totalearning2" value="totalearning2">
+                                                            <label for="totalearning2"> You can hide total earning</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="successrate2" name="successrate2" value="successrate2">
+                                                            <label for="successrate2"> You can hide success rate</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="skills2" name="skills2" value="skills2">
+                                                            <label for="skills2"> Add 20 skills</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="subcategory2" name="subcategory2" value="subcategory2">
+                                                            <label for="subcategory2"> Add 5 Sub Category</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bookmark2" name="bookmark2" value="bookmark2">
+                                                            <label for="bookmark2"> Bookmark Unlimited Jobs</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h4 class="section-title colored-title">Membership Buyer</h4>
+                                                    <h4 class="section-title">Free</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="free">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="invitation" name="invitation" value="invitation">
+                                                            <label for="invitation"> Sent upto 10 Job Invitation</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bookmark3" name="bookmark3" value="bookmark3">
+                                                            <label for="bookmark3"> Bookmark 10 Freelancers</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="badge" name="badge" value="badge">
+                                                            <label for="badge"> VIP Buyer Badge</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="support" name="support" value="support">
+                                                            <label for="support"> Free Recruiter Support</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="totalspend" name="totalspend" value="totalspend">
+                                                            <label for="totalspend"> You can hide total spend</label>
+                                                        </div>
+                                                    </div>
+                                                    <div style="height: 112px;"></div>
+                                                    <h4 class="section-title">Pro</h4>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="9.99" name="pro">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <div class="single-form-item">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="invitation2" name="invitation2" value="invitation2">
+                                                            <label for="invitation2"> Sent unlimited Job Invitation</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="bookmark4" name="bookmark4" value="bookmark4">
+                                                            <label for="bookmark4"> Bookmark unlimited Freelancers</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="badge2" name="badge2" value="badge2">
+                                                            <label for="badge2"> VIP Buyer Badge</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="support2" name="support2" value="support2">
+                                                            <label for="support2"> Free Recruiter Support</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="totalspend2" name="totalspend2" value="totalspend2">
+                                                            <label for="totalspend2"> You can hide total spend</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h4 class="section-title colored-title">Buy Bid Credit</h4>
+                                                    <div class="row">
+                                                        <div class="col-6 pr-2">
+                                                            <div class="single-form-item position-relative">
+                                                                <input type="text" placeholder="0" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 pl-2">
+                                                            <div class="single-form-item pls position-relative">
+                                                                <input type="text" placeholder="0.00" name="">
+                                                                <span class="dollar-sign">$</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6 pr-2">
+                                                            <div class="single-form-item position-relative">
+                                                                <input type="text" placeholder="0" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 pl-2">
+                                                            <div class="single-form-item pls position-relative">
+                                                                <input type="text" placeholder="0.00" name="">
+                                                                <span class="dollar-sign">$</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6 pr-2">
+                                                            <div class="single-form-item position-relative">
+                                                                <input type="text" placeholder="0" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 pl-2">
+                                                            <div class="single-form-item pls position-relative">
+                                                                <input type="text" placeholder="0.00" name="">
+                                                                <span class="dollar-sign">$</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6 pr-2">
+                                                            <div class="single-form-item position-relative">
+                                                                <input type="text" placeholder="0" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 pl-2">
+                                                            <div class="single-form-item pls position-relative">
+                                                                <input type="text" placeholder="0.00" name="">
+                                                                <span class="dollar-sign">$</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn mt-2">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div> <!-- tab-pane ends -->
+                                 <!-- tab-pane starts -->
+                                <div class="tab-pane fade" id="v-pills-eleven" role="tabpanel" aria-labelledby="v-pills-eleven-tab">
+                                    <form action="#">
+                                        <div class="form-section payment-gateway">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <!-- paypal starts -->
+                                                    <div class="paypal">
+                                                        <h4 class="section-title colored-title">Paypal</h4>
+                                                        <div class="active-box d-flex justify-content-between">
+                                                            <h4 class="section-title">Sandbox Key</h4>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="active1" name="active1" value="active1">
+                                                                <label for="active1"> Active</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item">
+                                                            <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                            <input type="text" placeholder="Public key" name="Public key">
+                                                        </div>
+                                                        <div class="active-box d-flex justify-content-between">
+                                                            <h4 class="section-title">Live Key</h4>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="active2" name="active2" value="active2">
+                                                                <label for="active2"> Active</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item">
+                                                            <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                            <input type="text" placeholder="Public key" name="Public key">
+                                                        </div>
+                                                    </div><!-- paypal ends -->
+                                                    <!-- payUmoney starts -->
+                                                    <div class="payUmoney">
+                                                        <h4 class="section-title colored-title">PayU Money</h4>
+                                                        <div class="active-box d-flex justify-content-between">
+                                                            <h4 class="section-title">Sandbox Key</h4>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="active3" name="active3" value="active3">
+                                                                <label for="active3"> Active</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item">
+                                                            <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                            <input type="text" placeholder="Public key" name="Public key">
+                                                        </div>
+                                                        <div class="active-box d-flex justify-content-between">
+                                                            <h4 class="section-title">Live Key</h4>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="active4" name="active4" value="active4">
+                                                                <label for="active4"> Active</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item">
+                                                            <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                            <input type="text" placeholder="Public key" name="Public key">
+                                                        </div>
+                                                    </div><!-- payUmoney ends -->
+                                                </div>
+                                                <div class="col-lg-6 d-flex flex-column justify-content-between">
+                                                    <!-- stripe starts -->
+                                                    <div class="stripe">
+                                                        <h4 class="section-title colored-title">Stripe</h4>
+                                                        <div class="active-box d-flex justify-content-between">
+                                                            <h4 class="section-title">Sandbox Key</h4>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="active5" name="active5" value="active5">
+                                                                <label for="active5"> Active</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item">
+                                                            <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                            <input type="text" placeholder="Public key" name="Public key">
+                                                        </div>
+                                                        <div class="active-box d-flex justify-content-between">
+                                                            <h4 class="section-title">Live Key</h4>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="active6" name="active6" value="active6">
+                                                                <label for="active6"> Active</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item">
+                                                            <input type="text" placeholder="Secrect key" name="Secrect key"><br/>
+                                                            <input type="text" placeholder="Public key" name="Public key">
+                                                        </div>
+                                                    </div><!-- stripe ends -->
+                                                    <div class="form-save-btn mt-2 text-right">
+                                                        <a href="#" class="boxed-btn">Save changes</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div> <!-- tab-pane ends -->
+                                 <!-- tab-pane starts -->
+                                <div class="tab-pane fade" id="v-pills-twelve" role="tabpanel" aria-labelledby="v-pills-twelve-tab">
+                                    <div class="d-flex">
+                                        <div class="form-section bank-details">
+                                            <form action="#">
+                                                <div class="bank-details-section d-flex flex-column justify-content-between h-100">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 pr-2">
+                                                            <div class="single-bank-detail">
+                                                                <div class="edit-delete-btn mb-1 text-right">
+                                                                    <a href="#">Edit</a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                                <p>
+                                                                    Bank Name: <strong>ICICI Bank Limited</strong><br>
+                                                                    Account Name: <strong>Gotlancer Private Limited</strong><br>
+                                                                    Account Number: <strong>12545421211</strong><br>
+                                                                    IFSC Code: <strong>ICICI00001</strong><br>
+                                                                    Swift Code: <strong>ICICI00001</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 pl-2">
+                                                            <div class="single-bank-detail">
+                                                                <div class="edit-delete-btn mb-1 text-right">
+                                                                    <a href="#">Edit</a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                                <p>
+                                                                    Bank Name: <strong>ICICI Bank Limited</strong><br>
+                                                                    Account Name: <strong>Gotlancer Private Limited</strong><br>
+                                                                    Account Number: <strong>12545421211</strong><br>
+                                                                    IFSC Code: <strong>ICICI00001</strong><br>
+                                                                    Swift Code: <strong>ICICI00001</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 pr-2">
+                                                            <div class="single-bank-detail">
+                                                                <div class="edit-delete-btn mb-1 text-right">
+                                                                    <a href="#">Edit</a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                                <p>
+                                                                    Bank Name: <strong>ICICI Bank Limited</strong><br>
+                                                                    Account Name: <strong>Gotlancer Private Limited</strong><br>
+                                                                    Account Number: <strong>12545421211</strong><br>
+                                                                    IFSC Code: <strong>ICICI00001</strong><br>
+                                                                    Swift Code: <strong>ICICI00001</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 pl-2">
+                                                            <div class="single-bank-detail">
+                                                                <div class="edit-delete-btn mb-1 text-right">
+                                                                    <a href="#">Edit</a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                                <p>
+                                                                    Bank Name: <strong>ICICI Bank Limited</strong><br>
+                                                                    Account Name: <strong>Gotlancer Private Limited</strong><br>
+                                                                    Account Number: <strong>12545421211</strong><br>
+                                                                    IFSC Code: <strong>ICICI00001</strong><br>
+                                                                    Swift Code: <strong>ICICI00001</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 pr-2">
+                                                            <div class="single-bank-detail">
+                                                                <div class="edit-delete-btn mb-1 text-right">
+                                                                    <a href="#">Edit</a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                                <p>
+                                                                    Bank Name: <strong>ICICI Bank Limited</strong><br>
+                                                                    Account Name: <strong>Gotlancer Private Limited</strong><br>
+                                                                    Account Number: <strong>12545421211</strong><br>
+                                                                    IFSC Code: <strong>ICICI00001</strong><br>
+                                                                    Swift Code: <strong>ICICI00001</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 pl-2">
+                                                            <div class="single-bank-detail">
+                                                                <div class="edit-delete-btn mb-1 text-right">
+                                                                    <a href="#">Edit</a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                                <p>
+                                                                    Bank Name: <strong>ICICI Bank Limited</strong><br>
+                                                                    Account Name: <strong>Gotlancer Private Limited</strong><br>
+                                                                    Account Number: <strong>12545421211</strong><br>
+                                                                    IFSC Code: <strong>ICICI00001</strong><br>
+                                                                    Swift Code: <strong>ICICI00001</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-save-btn mt-2">
+                                                        <a href="#" class="boxed-btn">Save changes</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="add-new-bank-section">
+                                            <h4 class="section-title">Add new Bank</h4>
+                                            <form action="#">
+                                                <div class="single-form-item w-100">
+                                                    <input type="text" placeholder="Bank Name" name="BankName">
+                                                </div>
+                                                <div class="single-form-item w-100">
+                                                    <select name="" id="">
+                                                        <option value="">Bank Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                        <option value="">Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="single-form-item w-100">
+                                                    <input type="text" placeholder="Account Holder" name="AccountHolder">
+                                                </div>
+                                                <div class="group-form d-flex">
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="Branch Name" name="BranchName">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="branchname" name="branchname" value="branchname">
+                                                        <label for="branchname"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="group-form d-flex">
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="Branch Code" name="BranchCode">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="branchcode" name="branchcode" value="branchcode">
+                                                        <label for="branchcode"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="group-form d-flex">
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="Account Number" name="accountnumber">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="accountnumber" name="accountnumber" value="accountnumber">
+                                                        <label for="accountnumber"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="group-form d-flex">
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="Routing Number" name="routingnumber">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="routingnumber" name="routingnumber" value="routingnumber">
+                                                        <label for="routingnumber"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="group-form d-flex">
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="IFSC" name="IFSC">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="IFSC" name="IFSC" value="IFSC">
+                                                        <label for="IFSC"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="group-form d-flex">
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="Swift Code" name="swiftcode">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="swiftcode" name="swiftcode" value="swiftcode">
+                                                        <label for="swiftcode"></label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="boxed-btn">Add new</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div> <!-- tab-pane ends -->
+                                 <!-- tab-pane starts -->
+                                <div class="tab-pane fade" id="v-pills-thirteen" role="tabpanel" aria-labelledby="v-pills-thirteen-tab">
+                                    thirteen
+                                </div> <!-- tab-pane ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- settings-area ends -->
+                    
+        </div>
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fas fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

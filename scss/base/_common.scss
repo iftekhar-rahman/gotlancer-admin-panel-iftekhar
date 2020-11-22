@@ -35,54 +35,63 @@ a, button, img, input, span {
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 5px;
     height: 50px;
-    padding: 8px 20px;
+    line-height: 50px;
+    padding: 10px 10px;
+    border: 1px solid #E7ECF2;
+    color: $body-color;
+    width: 100%;
+    margin-bottom: 15px;
 }
-.form-group {
-    margin-bottom: 25px;
-    .form-control{
-        &:focus {
-            box-shadow: none;
-            border-color: #2a7d2e;
-        }
-        &:hover {
-            border-color: #2a7d2e;
-        }
-    }
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover,
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
+    @extend %primary-border-color;
 }
+// .form-group {
+//     margin-bottom: 25px;
+//     .form-control{
+//         &:focus {
+//             box-shadow: none;
+//             border-color: #2a7d2e;
+//         }
+//         &:hover {
+//             border-color: #2a7d2e;
+//         }
+//     }
+// }
 input[type=submit], button[type=submit]{
     cursor: pointer;
 }
 input, textarea{
 	@include placeholder{
-		color: $body-color;
+		color: #8CA2BB;
 	}
 }
-input[type=submit], button[type=submit]{
-    &:hover{
+// input[type=submit], button[type=submit]{
+//     &:hover{
         
-    }
-}
+//     }
+// }
 textarea {
-    height: 150px;
-    padding: 10px 20px;
+    height: 105px;
+    padding: 10px 10px;
     width: 100%;
-    // margin-bottom: -7px;
-    border-color: #ced4da;
+    line-height: initial;
     transition: all .3s ease;
-    &:focus {
-        border-color: #2a7d2e;
-    }
-    &:hover {
-        border-color: #2a7d2e;
-    }
 }
-
+.form-check {
+    padding-left: 0;
+    margin-bottom: 5px;
+}
 /*========.section-title=========*/ 
 .section-title {
-    font-size: 38px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #124a2f;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #192A3E;
+    text-transform: capitalize;
+    &.colored-title{
+        @extend %primary-color;
+    }
 }
 
 /*======.owl-dots customization=======*/
@@ -215,54 +224,72 @@ select {
 }
 
 
+/*========== default checkbox style =============*/
+input[type=checkbox]{
+    display:none;
+}
+input[type=checkbox] + label:before {
+    border: 1px solid#CCCCCC;
+    content: "";
+    display: inline-block;
+    font-size: 30px;
+    height: 18px;
+    width: 18px;
+    line-height: 11px;
+    margin: -2px 5px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #fff;
+}
+input[type=checkbox]:checked + label:before {
+    content: "";
+    // font-family: "Font Awesome 5 Free";
+    // @extend %primary-color;
+    @extend %primary-bg-color;
+    @extend %primary-border-color;
+    font-size: 15px;
+    padding-top: 4px;
+    background-image: url(../img/check.svg);
+    background-position:2px 4px;
+    background-repeat: no-repeat;
+}
+label {
+    margin-right: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
 
-
-
-
-// .dropdown-menu {
-//     transform: inherit !important;
-//     left: -131px !important;
-//     border: 0;
-//     box-shadow: 0 0 50px 0 rgba(82,63,105,.15);
-//     border-radius: 5px;
-//     width: 175px;
-//     padding: 10px 0;
-//     top: 50px !important;
-//     opacity: 0;
-//     visibility: hidden;
-//     transition: all .5s ease;
-// }
-// .dropdown-menu .dropdown-item {
-//     color: #3f4254;
-//     font-size: 14px;
-//     padding: 9px 20px;
-// }
-// .dropdown-menu .dropdown-item:hover {
-//     background: #f3f6f9;
-//     color: #71B659;
-// }
-// .dropdown-menu span {
-//     padding: 6px 18px;
-//     font-size: 13px;
-//     text-transform: uppercase;
-//     font-weight: 600;
-//     display: block;
-//     color: #71B659;
-// }
-// .dropdown-menu.show {
-//     opacity: 1;
-//     visibility: visible;
-//     top: 32px !important;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
+/*========== default radio button style =============*/
+input[type=radio]{
+    display:none;
+}
+input[type=radio] + label:before {
+    border: 1px solid#CCCCCC;
+    content: "";
+    display: inline-block;
+    font-size: 30px;
+    height: 18px;
+    width: 18px;
+    line-height: 11px;
+    margin: -2px 5px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #fff;
+}
+input[type=radio]:checked + label:before {
+    content: "";
+    // font-family: "Font Awesome 5 Free";
+    // @extend %primary-color;
+    @extend %primary-bg-color;
+    @extend %primary-border-color;
+    font-size: 15px;
+    padding-top: 4px;
+    background-image: url(../img/check.svg);
+    background-position:2px 4px;
+    background-repeat: no-repeat;
+}
+label{
+    @extend %body-color;
+}
