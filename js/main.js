@@ -1,5 +1,13 @@
 jQuery(document).ready(function($){
 
+   
+
+    // nice select
+    $('select').niceSelect();
+    
+    // perfectScrollbar
+    $(".nice-select .list").perfectScrollbar();
+
     $(".menu-trigger").on("click", function(){
         $(".menu-trigger, .offcanvas-menu").toggleClass("active");
     });

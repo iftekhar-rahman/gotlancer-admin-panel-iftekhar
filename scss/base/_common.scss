@@ -32,7 +32,7 @@ p {
 a, button, img, input, span {
     @extend %basetransition1; 
 }
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], input[type=date], textarea {
     border-radius: 5px;
     height: 50px;
     line-height: 50px;
@@ -44,6 +44,10 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
 }
 input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover,
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
+    @extend %primary-border-color;
+}
+input[type=date]:focus {
+    box-shadow: none;
     @extend %primary-border-color;
 }
 // .form-group {
@@ -147,9 +151,12 @@ select {
 }
 
 /*========.nice-select=============*/ 
+.dropdown-wrap{
+    height: 50px;
+}
 .nice-select {
     width: 100%;
-    border-radius: 50px;
+    border-radius: 5px;
     height: 50px;
     line-height: 50px;
     padding-left: 20px;
@@ -160,25 +167,25 @@ select {
         border: 1px solid #ced4da;
     }
     &:focus {
-        border-color: #154D32;
+        @extend %primary-border-color;
     }
     &:hover {
-        border-color: #154D32;
+        @extend %primary-border-color;
     }
     &:after{
         right: 25px;
-        border-color: #ced4da;
+        border-color: #8CA2BB;
         width: 10px;
         height: 10px;
         margin-top: -6px;
     }
     &:hover:after {
-        border-color: #2A7D2E;
+        @extend %primary-border-color;
     }
 }
-.ps__scrollbar-y {
-    background-color: #99822c !important;
-}
+// .ps__scrollbar-y {
+//     background-color: #99822c !important;
+// }
 
 .custom-dropdown.dropdown {
     button {

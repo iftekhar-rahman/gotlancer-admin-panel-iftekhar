@@ -161,19 +161,17 @@
         }
     }
     //.fees-and-charges
-    .fees-and-charges{
-        .dollar-sign {
-            position: absolute;
-            left: 7px;
-            bottom: 28px;
-            color: #6FB556;
-            font-size: 18px;
-        }
-        .single-form-item{
-            &.pls{
-                input{
-                    padding-left: 25px;
-                }
+    .dollar-sign {
+        position: absolute;
+        left: 7px;
+        bottom: 28px;
+        color: #6FB556;
+        font-size: 18px;
+    }
+    .single-form-item{
+        &.pls{
+            input{
+                padding-left: 25px;
             }
         }
     }
@@ -187,7 +185,7 @@
     }
     // 
     .bank-details{
-        padding: 40px 30px 40px;
+        padding: 40px 30px 35px;
         flex-basis: 65%;
         .single-bank-detail {
             color: #8CA2BB;
@@ -219,7 +217,13 @@
     .add-new-bank-section {
         flex-basis: 35%;
         background: #E3EAF4;
-        padding: 40px 20px 20px;
+        padding: 40px 20px 25px;
+        .boxed-btn{
+            @extend %secondary-bg-color;
+            &:hover{
+                @extend %primary-bg-color;
+            }
+        }
         .section-title{
             margin-bottom: 35px;
         }
@@ -241,6 +245,47 @@
             }
         }
     }
+    // .badges
+    .badges {
+        padding: 40px 40px 30px;
+        h5 {
+            color: #192A3E;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 0 7px;
+        }
+        .user-title {
+            color: #6FB556;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 15px;
+            &.top-rated{
+                color: #485E76;
+            }
+            &.top-rated-plus{
+                color: #8EA4BC;
+            }
+            &.top-rated-plus{
+                color: #8EA4BC;
+            }
+            &.highest-rated{
+                color: #EDB742;
+            }
+            i {
+                font-size: 16px;
+                margin-right: 3px;
+            }
+        }
+    }
+    // maintanance-mood
+    .maintanance-mood{
+        .back-in-date {
+            padding-left: 27px;
+            padding-right: 20px;
+        }
+    }
+    
 }
 
 

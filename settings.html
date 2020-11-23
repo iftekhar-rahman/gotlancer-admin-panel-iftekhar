@@ -12,7 +12,8 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <!--Plugins-->
-        
+        <link href="css/nice-select.css" rel="stylesheet">
+        <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
 
         <!--Theme specific styles-->
         <link href="css/style.css" rel="stylesheet">
@@ -187,6 +188,9 @@
                                     Bank Details
                                 </a>
                                 <a class="" id="v-pills-thirteen-tab" data-toggle="pill" href="#v-pills-thirteen" role="tab" aria-controls="v-pills-thirteen" aria-selected="false">
+                                    Badges
+                                </a>
+                                <a class="" id="v-pills-fourteen-tab" data-toggle="pill" href="#v-pills-fourteen" role="tab" aria-controls="v-pills-fourteen" aria-selected="false">
                                     Maintanance Mood
                                 </a>
                             </div>
@@ -1153,7 +1157,7 @@
                                 <div class="tab-pane fade" id="v-pills-twelve" role="tabpanel" aria-labelledby="v-pills-twelve-tab">
                                     <div class="d-flex">
                                         <div class="form-section bank-details">
-                                            <form action="#">
+                                            <form action="#" class="h-100">
                                                 <div class="bank-details-section d-flex flex-column justify-content-between h-100">
                                                     <div class="row">
                                                         <div class="col-lg-6 pr-2">
@@ -1254,89 +1258,331 @@
                                             </form>
                                         </div>
                                         <div class="add-new-bank-section">
-                                            <h4 class="section-title">Add new Bank</h4>
-                                            <form action="#">
-                                                <div class="single-form-item w-100">
-                                                    <input type="text" placeholder="Bank Name" name="BankName">
+                                            <form action="#" class="h-100">
+                                                <div class="d-flex flex-column justify-content-between h-100">
+                                                    <div>
+                                                        <h4 class="section-title">Add new Bank</h4>
+                                                        <div class="single-form-item w-100">
+                                                            <input type="text" placeholder="Bank Name" name="BankName">
+                                                        </div>
+                                                        <div class="single-form-item w-100">
+                                                            <div class="dropdown-wrap">
+                                                                <select name="" id="">
+                                                                    <option value="">Bank Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                    <option value="">Country</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-form-item w-100">
+                                                            <input type="text" placeholder="Account Holder" name="AccountHolder">
+                                                        </div>
+                                                        <div class="group-form d-flex">
+                                                            <div class="single-form-item">
+                                                                <input type="text" placeholder="Branch Name" name="BranchName">
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="branchname" name="branchname" value="branchname">
+                                                                <label for="branchname"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-form d-flex">
+                                                            <div class="single-form-item">
+                                                                <input type="text" placeholder="Branch Code" name="BranchCode">
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="branchcode" name="branchcode" value="branchcode">
+                                                                <label for="branchcode"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-form d-flex">
+                                                            <div class="single-form-item">
+                                                                <input type="text" placeholder="Account Number" name="accountnumber">
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="accountnumber" name="accountnumber" value="accountnumber">
+                                                                <label for="accountnumber"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-form d-flex">
+                                                            <div class="single-form-item">
+                                                                <input type="text" placeholder="Routing Number" name="routingnumber">
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="routingnumber" name="routingnumber" value="routingnumber">
+                                                                <label for="routingnumber"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-form d-flex">
+                                                            <div class="single-form-item">
+                                                                <input type="text" placeholder="IFSC" name="IFSC">
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="IFSC" name="IFSC" value="IFSC">
+                                                                <label for="IFSC"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-form d-flex">
+                                                            <div class="single-form-item">
+                                                                <input type="text" placeholder="Swift Code" name="swiftcode">
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="swiftcode" name="swiftcode" value="swiftcode">
+                                                                <label for="swiftcode"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="boxed-btn">Add new</a>
+                                                    </div>
                                                 </div>
-                                                <div class="single-form-item w-100">
-                                                    <select name="" id="">
-                                                        <option value="">Bank Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                        <option value="">Country</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-form-item w-100">
-                                                    <input type="text" placeholder="Account Holder" name="AccountHolder">
-                                                </div>
-                                                <div class="group-form d-flex">
-                                                    <div class="single-form-item">
-                                                        <input type="text" placeholder="Branch Name" name="BranchName">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" id="branchname" name="branchname" value="branchname">
-                                                        <label for="branchname"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="group-form d-flex">
-                                                    <div class="single-form-item">
-                                                        <input type="text" placeholder="Branch Code" name="BranchCode">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" id="branchcode" name="branchcode" value="branchcode">
-                                                        <label for="branchcode"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="group-form d-flex">
-                                                    <div class="single-form-item">
-                                                        <input type="text" placeholder="Account Number" name="accountnumber">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" id="accountnumber" name="accountnumber" value="accountnumber">
-                                                        <label for="accountnumber"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="group-form d-flex">
-                                                    <div class="single-form-item">
-                                                        <input type="text" placeholder="Routing Number" name="routingnumber">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" id="routingnumber" name="routingnumber" value="routingnumber">
-                                                        <label for="routingnumber"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="group-form d-flex">
-                                                    <div class="single-form-item">
-                                                        <input type="text" placeholder="IFSC" name="IFSC">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" id="IFSC" name="IFSC" value="IFSC">
-                                                        <label for="IFSC"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="group-form d-flex">
-                                                    <div class="single-form-item">
-                                                        <input type="text" placeholder="Swift Code" name="swiftcode">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" id="swiftcode" name="swiftcode" value="swiftcode">
-                                                        <label for="swiftcode"></label>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="boxed-btn">Add new</a>
                                             </form>
                                         </div>
                                     </div>
                                 </div> <!-- tab-pane ends -->
                                  <!-- tab-pane starts -->
                                 <div class="tab-pane fade" id="v-pills-thirteen" role="tabpanel" aria-labelledby="v-pills-thirteen-tab">
-                                    thirteen
+                                    <form action="#">
+                                        <div class="form-section badges">
+                                            <div class="badges-header d-flex justify-content-between mb-4">
+                                                <div class="left">
+                                                    <h4 class="section-title">Freelancer Badges</h4>
+                                                </div>
+                                                <div class="right">
+                                                    <a href="#" class="boxed-btn">Save Change</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="user-title position-relative">
+                                                        <i class="fas fa-star"></i> Rising talent
+                                                    </div>
+                                                    <h5>Project Completed</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name="">
+                                                    </div>
+                                                    <h5>Earn At Least</h5>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="fee">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <h5>Avg. Reviews</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="4.00" name=>
+                                                    </div>
+                                                    <h5>At Least Pass Exam</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Job Success Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Max Dispute Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <div class="single-form-item mt-4">
+                                                        <h5 class="mb-3">Rquired</h5>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="emailverified1" name="emailverified1" value="emailverified1">
+                                                            <label for="emailverified1"> Email Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="kycverified1" name="kycverified1" value="kycverified1">
+                                                            <label for="kycverified1"> KYC Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="profilecompleted1" name="profilecompleted1" value="profilecompleted1">
+                                                            <label for="profilecompleted1"> Profile Completed</label>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- col ends -->
+                                                <div class="col-lg-3">
+                                                    <div class="user-title top-rated position-relative">
+                                                        <i class="fas fa-star"></i> Top rated
+                                                    </div>
+                                                    <h5>Project Completed</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name="">
+                                                    </div>
+                                                    <h5>Earn At Least</h5>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <h5>Avg. Reviews</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="4.00" name=>
+                                                    </div>
+                                                    <h5>At Least Pass Exam</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Job Success Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Max Dispute Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <div class="single-form-item mt-4">
+                                                        <h5 class="mb-3">Rquired</h5>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="emailverified2" name="emailverified2" value="emailverified2">
+                                                            <label for="emailverified2"> Email Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="kycverified2" name="kycverified2" value="kycverified2">
+                                                            <label for="kycverified2"> KYC Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="profilecompleted2" name="profilecompleted2" value="profilecompleted2">
+                                                            <label for="profilecompleted2"> Profile Completed</label>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- col ends -->
+                                                <div class="col-lg-3">
+                                                    <div class="user-title top-rated-plus position-relative">
+                                                        <i class="fas fa-star"></i> Top rated plus
+                                                    </div>
+                                                    <h5>Project Completed</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name="">
+                                                    </div>
+                                                    <h5>Earn At Least</h5>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <h5>Avg. Reviews</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="4.00" name=>
+                                                    </div>
+                                                    <h5>At Least Pass Exam</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Job Success Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Max Dispute Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <div class="single-form-item mt-4">
+                                                        <h5 class="mb-3">Rquired</h5>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="emailverified3" name="emailverified3" value="emailverified3">
+                                                            <label for="emailverified3"> Email Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="kycverified3" name="kycverified3" value="kycverified3">
+                                                            <label for="kycverified3"> KYC Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="profilecompleted3" name="profilecompleted3" value="profilecompleted3">
+                                                            <label for="profilecompleted3"> Profile Completed</label>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- col ends -->
+                                                <div class="col-lg-3">
+                                                    <div class="user-title highest-rated position-relative">
+                                                        <i class="fas fa-star"></i> Highest rated
+                                                    </div>
+                                                    <h5>Project Completed</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name="">
+                                                    </div>
+                                                    <h5>Earn At Least</h5>
+                                                    <div class="single-form-item pls position-relative">
+                                                        <input type="text" placeholder="0.00" name="">
+                                                        <span class="dollar-sign">$</span>
+                                                    </div>
+                                                    <h5>Avg. Reviews</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="4.00" name=>
+                                                    </div>
+                                                    <h5>At Least Pass Exam</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Job Success Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <h5>Max Dispute Rate (%)</h5>
+                                                    <div class="single-form-item">
+                                                        <input type="text" placeholder="0" name=>
+                                                    </div>
+                                                    <div class="single-form-item mt-4">
+                                                        <h5 class="mb-3">Rquired</h5>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="emailverified4" name="emailverified4" value="emailverified4">
+                                                            <label for="emailverified4"> Email Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="kycverified4" name="kycverified4" value="kycverified4">
+                                                            <label for="kycverified4"> KYC Verified</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="profilecompleted4" name="profilecompleted4" value="profilecompleted4">
+                                                            <label for="profilecompleted4"> Profile Completed</label>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- col ends -->
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div> <!-- tab-pane ends -->
+                                <div class="tab-pane fade" id="v-pills-fourteen" role="tabpanel" aria-labelledby="v-pills-fourteen-tab">
+                                    <form action="#">
+                                        <div class="form-section maintanance-mood">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <h4 class="section-title">Maintanance Mood</h4>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="livemood" name="livemood" value="livemood">
+                                                        <label for="livemood"> Live Mood</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="comingsoon" name="comingsoon" value="comingsoon">
+                                                        <label for="comingsoon"> Coming Soon</label>
+                                                    </div>
+                                                    <div class="back-in-date">
+                                                        <h6>Back In</h6>
+                                                        <div class="date-box">
+                                                            <input type="date" value="DD-MM-YYYY">
+                                                        </div>
+                                                        <div class="time-box d-flex align-items-center">
+                                                            <div class="single-form-item mr-2">
+                                                                <input type="text" placeholder="00" name=>
+                                                            </div>
+                                                            <div class="form-check mr-2">
+                                                                <input type="checkbox" id="am" name="am" value="am">
+                                                                <label for="am"> AM</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" id="pm" name="pm" value="pm">
+                                                                <label for="pm"> PM</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-save-btn mt-4">
+                                                <a href="#" class="boxed-btn">Save changes</a>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div> <!-- tab-pane ends -->
                             </div>
                         </div>
@@ -1353,7 +1599,8 @@
         <script src="js/bootstrap.bundle.min.js"></script>       
 
         <!--Plugins-->
-        
+        <script src="js/jquery.nice-select.min.js"></script>      
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>      
 
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>
