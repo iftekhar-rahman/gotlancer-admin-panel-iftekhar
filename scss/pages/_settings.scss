@@ -41,22 +41,8 @@
         }
     }
 }
-
-
-// .settings-area
-.settings-area {
-    padding: 25px 0;
-    .settings-header {
-        margin-bottom: 50px;
-        .section-title{
-            margin-bottom: 10px;
-        }
-        .date {
-            color: #8CA2BB;
-            font-size: 16px;
-            line-height: 1;
-        }
-    }
+// .main-content
+.main-content{
     .container-fluid {
         padding-left: 100px;
         padding-right: 100px;
@@ -66,6 +52,21 @@
         }
         .col-right-9{
             flex-basis: 78%;
+        }
+    }
+}
+// .settings-area
+.settings-area {
+    padding: 25px 0 40px;
+    .settings-header {
+        margin-bottom: 50px;
+        .section-title{
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #8CA2BB;
+            font-size: 16px;
+            line-height: 1;
         }
     }
     .form-save-btn {
@@ -103,7 +104,7 @@
                 padding: 12px 15px;
                 border-left: 4px solid transparent;
                 &.active {
-                    border-color: #74B95C;
+                    @extend %primary-border-color;
                     background: #F2F5FA;
                     color: #192A3E;
                     // font-weight: 500;
@@ -165,7 +166,7 @@
         position: absolute;
         left: 7px;
         bottom: 28px;
-        color: #6FB556;
+        @extend %primary-color;
         font-size: 18px;
     }
     .single-form-item{
@@ -202,7 +203,7 @@
             }
             .edit-delete-btn {
                 a {
-                    color: #71B659;
+                    @extend %primary-color;
                     font-size: 14px;
                     font-weight: 500;
                     padding: 5px 0;
@@ -255,7 +256,7 @@
             margin: 0 0 7px;
         }
         .user-title {
-            color: #6FB556;
+            @extend %primary-color;
             font-size: 12px;
             text-transform: uppercase;
             font-weight: 600;

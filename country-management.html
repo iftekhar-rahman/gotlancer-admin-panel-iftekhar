@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Country management</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="css/nice-select.css" rel="stylesheet">
+        <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
+        
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="offcanvas-menu">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Freelancers <span class="menu-label">9,541,220</span></a></li>
+                <li><a href="#">Buyers <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Account Suspended <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Rejected Freelancers <span class="menu-label">141,220</span></a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Membership Settings</a></li>
+                <li><a href="#">Active Subscribers <span class="menu-label"></span></a></li>
+                <li><a href="#">Proposal Credit</a></li>
+                <li><a href="#">All Jobs <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Active Contracts <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Support Ticket <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Dispute Management <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Exam Management <span class="menu-label">1,220</span></a></li>
+                <li><a href="#">Manage Category</a></li>
+                <li><a href="#">Manage Skills</a></li>
+                <li><a href="#">Manage Hire Page</a></li>
+                <li><a href="#">Manage Category Page</a></li>
+                <li><a href="#">Freelancer By Country Page</a></li>
+                <li><a href="#">FAQ Management</a></li>
+                <li><a href="#">Legal Pages</a></li>
+                <li><a href="#">Bugs Report <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Staffs <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Profit History</a></li>
+                <li><a href="#">Transection History</a></li>
+            </ul>
+        </div>
+        
+        <div class="site-wrapper">
+            <!-- header starts -->
+            <div class="header fixed-top">
+                <div class="header-area">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col h-100">
+                                <div class="header-left-section d-flex align-items-center h-100">
+                                    <div class="offcanvas-menu-trigger d-flex align-items-center">
+                                        <div class="menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="site-logo">
+                                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                                    </div>
+                                    <div class="mainmenu off-canvas-nav">
+                                        <ul>
+                                            <li class="menu-item-has-children">
+                                                <span class="menu-label">123</span>
+                                                <a href="#">Approvals</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Pending Freelancers <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Payments Approval</a></li>
+                                                    <li><a href="#">Bid credit payment</a></li>
+                                                    <li><a href="#">Subscription payment</a></li>
+                                                    <li><a href="#">Due Payment</a></li>
+                                                    <li><a href="#">Invoice Payment</a></li>
+                                                    <li><a href="#">Earning Approval <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Pending KYC <span class="dropdown-label">123</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label alert-label">123</span><a href="#">Unpaid Invoice</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Withdrawals</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Nagative Balance</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Renewals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header-right-section d-flex justify-content-end align-items-center h-100">
+                                    <div class="notification-link">
+                                        <a href="#"><i class="fas fa-bell"></i> <span class="count">1</span></a>
+                                    </div>
+                                    <div class="custom-dropdown dropdown">
+                                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/user-1.svg" alt="">
+                                        </button>
+                                        <div class="dropdown-menu" >
+                                            <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
+                                            <a href="#Profile"><i class="fas fa-user"></i> My Profile</a>
+                                            <a href="#Logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-trigger-wrap d-lg-none d-flex align-items-center">
+                                        <div class="main-menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header ends -->
+
+            <div class="divider"></div>
+
+            <!-- management-content-area starts -->
+            <div class="main-content management-content-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <!-- box-section starts -->
+                            <div class="box-section d-flex">
+                                <div class="single-box section-border">
+                                    <h4 class="section-title">Active Country</h4>
+                                    <div class="counted-number">210</div>
+                                </div>
+                                <div class="single-box section-border">
+                                    <h4 class="section-title">Inactive Country</h4>
+                                    <div class="counted-number">40</div>
+                                </div>
+                                <div class="single-box section-border">
+                                    <h4 class="section-title">Total state</h4>
+                                    <div class="counted-number">500000</div>
+                                </div>
+                                <div class="single-box section-border">
+                                    <h4 class="section-title">Total Cities</h4>
+                                    <div class="counted-number">1000000</div>
+                                </div>
+                            </div><!-- box-section ends -->
+                            <div class="section-table country-table-section">
+                                <div class="table-header-section d-flex justify-content-between align-items-center">
+                                    <div class="left">
+                                        <h4 class="section-title">All country</h4>
+                                    </div>
+                                    <div class="right">
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </div>
+                                <div class="table-content-section">
+                                    <table class="datatable table">
+                                        <thead class="datatable-head">
+                                            <tr class="datatable-row">
+                                                <th class="col1">SL</th>
+                                                <th class="col2">Country Name</th>
+                                                <th class="col3">ISO Code</th>
+                                                <th class="col4">Users</th>
+                                                <th class="col5">State</th>
+                                                <th class="col6">City</th>
+                                                <th class="col7">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="datatable-body">
+                                            <tr class="datatable-row">
+                                                <td class="datatable-cell">1</td>
+                                                <td class="datatable-cell flag">
+                                                    <img src="img/flag-1.svg" alt=""> United State
+                                                </td>
+                                                <td class="datatable-cell">US</td>
+                                                <td class="datatable-cell">12451512</td>
+                                                <td class="datatable-cell">New York</td>
+                                                <td class="datatable-cell">New York</td>
+                                                <td class="datatable-cell d-flex align-items-center">
+                                                    <span class="tick-mark-btn form-check"><input type="checkbox" id="tickmark1" name="tickmark1" value="tickmark1"><label for="tickmark1"></label></span>
+                                                    <span class="edit-btn"><i class="fas fa-edit"></i></span>
+                                                    <span class="delete-btn"><i class="fas fa-trash-alt"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr class="datatable-row">
+                                                <td class="datatable-cell">2</td>
+                                                <td class="datatable-cell flag">
+                                                    <img src="img/flag-1.svg" alt=""> United State
+                                                </td>
+                                                <td class="datatable-cell">US</td>
+                                                <td class="datatable-cell">12451512</td>
+                                                <td class="datatable-cell">New York</td>
+                                                <td class="datatable-cell">New York</td>
+                                                <td class="datatable-cell d-flex align-items-center">
+                                                    <span class="tick-mark-btn form-check"><input type="checkbox" id="tickmark2" name="tickmark2" value="tickmark2"><label for="tickmark2"></label></span>
+                                                    <span class="edit-btn"><i class="fas fa-edit"></i></span>
+                                                    <span class="delete-btn"><i class="fas fa-trash-alt"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr class="datatable-row">
+                                                <td class="datatable-cell">3</td>
+                                                <td class="datatable-cell flag">
+                                                    <img src="img/flag-1.svg" alt=""> United State
+                                                </td>
+                                                <td class="datatable-cell">US</td>
+                                                <td class="datatable-cell">12451512</td>
+                                                <td class="datatable-cell">New York</td>
+                                                <td class="datatable-cell">New York</td>
+                                                <td class="datatable-cell d-flex">
+                                                    <span class="tick-mark-btn form-check"><input type="checkbox" id="tickmark3" name="tickmark3" value="tickmark3"><label for="tickmark3"></label></span>
+                                                    <span class="edit-btn"><i class="fas fa-edit"></i></span>
+                                                    <span class="delete-btn"><i class="fas fa-trash-alt"></i></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="sidebar">
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item section-border mb-3">
+                                    <form action="#">
+                                        <h4 class="section-title">Add New Country</h4>
+                                        <div class="sidebar-content">
+                                            <div class="single-form-item">
+                                                <input type="text" placeholder="Country Name">
+                                            </div>
+                                            <div class="single-form-item">
+                                                <input type="text" placeholder="ISO Code">
+                                            </div>
+                                            <div class="single-form-item image-preview-box d-flex align-items-center mb-3">
+                                                <div class="upload-btn-wrapper">
+                                                    <button class="btn"><i class="fas fa-plus"></i> Add Logo</button>
+                                                    <input type="file" name="myfile" />
+                                                </div>
+                                                <div class="file-preview ml-2">
+                                                    No file selected
+                                                </div>
+                                            </div>
+                                            <div class="single-form-item">
+                                                <input type="text" placeholder="State or Regions">
+                                            </div>
+                                            <div class="single-form-item">
+                                                <input type="text" placeholder="City">
+                                            </div>
+                                            <div class="add-btn mt-3">
+                                                <a href="#" class="boxed-btn w-100 text-center">Add new</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item section-border mb-3">
+                                    <form action="#">
+                                        <h4 class="section-title">Add State or City</h4>
+                                        <div class="sidebar-content">
+                                            <div class="single-form-item mb-3">
+                                                <div class="dropdown-wrap">
+                                                    <select name="" id="">
+                                                        <option value="">Select a country</option>
+                                                        <option value="">country 1</option>
+                                                        <option value="">country 2</option>
+                                                        <option value="">country 3</option>
+                                                        <option value="">country 4</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                        <option value="">country 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="single-form-item">
+                                                <input type="text" placeholder="State or Regions">
+                                            </div>
+                                            <div class="single-form-item">
+                                                <input type="text" placeholder="City">
+                                            </div>
+                                            <div class="add-btn mt-3">
+                                                <a href="#" class="boxed-btn w-100 text-center">Add new</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item countries-list section-border mb-3">
+                                    <form action="#">
+                                        <h4 class="section-title">Top 10 Countries</h4>
+                                        <div class="sidebar-content">
+                                            <ul>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                                <li><img src="img/flag-1.svg" alt=""> United State <span class="number">1,212452</span></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <!-- management-content-area ends -->
+                    
+        </div>
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fas fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/jquery.nice-select.min.js"></script>      
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>    
+        
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

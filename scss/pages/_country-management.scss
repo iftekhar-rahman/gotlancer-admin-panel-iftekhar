@@ -1,0 +1,156 @@
+.main-content{
+    .box-section {
+        margin-bottom: 30px;
+        .single-box {
+            height: 175px;
+            width: 33.3333%;
+            background-color: #fff;
+            margin-right: 25px;
+            padding: 30px 20px;
+            box-shadow: $box-shadow;
+            &:last-child {
+                margin-right: 0;
+            }
+            .counted-number {
+                color: #74B95C;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .section-title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    // .add-btn
+    .add-btn {
+        .boxed-btn {
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .sidebar{
+        .single-sidebar-item{
+            background-color: #fff;
+            box-shadow: $box-shadow;
+            .section-title {
+                margin: 0;
+                padding: 11px 20px;
+                border-bottom: 1px solid #CED8E1;
+            }
+            .sidebar-content {
+                padding: 20px 20px 40px;
+            }
+            &.countries-list{
+                border-color: #192A3E;
+                .sidebar-content{
+                    padding: 0px 20px 0px;
+                    ul {
+                        li {
+                            position: relative;
+                            border-bottom: 1px solid #CED8E1;
+                            padding: 15px 0;
+                            font-size: 16px;
+                            padding-left: 42px;
+                            font-weight: 500;
+                            &:last-child {
+                                border-bottom: 0;
+                            }
+                            .number {
+                                position: absolute;
+                                right: 0;
+                                top: 15px;
+                                color: #71B659;
+                                font-weight: 400;
+                            }
+                            img {
+                                margin-right: 3px;
+                                position: absolute;
+                                left: 0;
+                                top: 14px;
+                                max-width: 36px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.management-content-area {
+    padding: 90px 0 40px;
+}
+
+
+
+
+.section-table {
+    background: #fff;
+    box-shadow: $box-shadow;
+    .table-header-section {
+        border-bottom: 1px solid #CED8E1;
+        padding: 15px 20px;
+        .section-title {
+            margin: 0;
+        }
+        input[type=text] {
+            margin: 0;
+        }
+    }
+    .table-content-section{
+        padding: 0 20px;
+        .datatable {
+            padding: 0 30px;
+            .datatable-head {
+                .datatable-row {
+                    th {
+                        border: 0;
+                        padding: .95rem .75rem;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .datatable-body{
+                .datatable-row{
+                    .datatable-cell{
+                        vertical-align: middle;
+                        border-color: #CED8E1;
+                        &.flag{
+                            img{
+                                max-width: 36px;
+                                margin-right: 7px;
+                            }
+                        }
+                        label {
+                            margin: 0 0 0;
+                        }
+                        span {
+                            width: 18px;
+                            height: 18px;
+                            margin: 0 5px;
+                            cursor: pointer;
+                        }
+                        .edit-btn, .delete-btn {
+                            background: #8CA2BB;
+                            color: #fff;
+                            text-align: center;
+                            border-radius: 3px;
+                            font-size: 10px;
+                            line-height: 18px;
+                            &:hover{
+                                @extend %primary-bg-color;
+                                @extend %secondary-color;
+                            }
+                        }
+                    }
+                    td {
+                        padding: .95rem .75rem;
+                        vertical-align: middle;
+                        border-top: 1px solid #CED8E1;
+                    }
+                }
+            }
+        }
+    }
+}

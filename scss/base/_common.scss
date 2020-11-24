@@ -143,13 +143,16 @@ textarea {
     }
 }
 
-select {
-    font-size: 19px;
-    color: #0da0f4;
-    background-color: #fff;
-    padding: 8px 10px;
+// select {
+//     font-size: 19px;
+//     color: #0da0f4;
+//     background-color: #fff;
+//     padding: 8px 10px;
+// }
+.section-border{
+    border-bottom: 3px solid;
+    @extend %primary-border-color;
 }
-
 /*========.nice-select=============*/ 
 .dropdown-wrap{
     height: 50px;
@@ -165,6 +168,11 @@ select {
         width: 100%;
         box-shadow: none;
         border: 1px solid #ced4da;
+        max-height: 405px;
+        .option {
+            line-height: 30px;
+            min-height: 30px;
+        }
     }
     &:focus {
         @extend %primary-border-color;

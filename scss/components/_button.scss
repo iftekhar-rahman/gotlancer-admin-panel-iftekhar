@@ -10,7 +10,7 @@
     @extend %white-color;
     text-transform: capitalize;
     &:hover {
-        background-color:#314963; 
+        @extend %secondary-bg-color;
         @extend %white-color;
     }
 }
