@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>All freelancers</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="css/nice-select.css" rel="stylesheet">
+        <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
+        
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="offcanvas-menu">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Freelancers <span class="menu-label">9,541,220</span></a></li>
+                <li><a href="#">Buyers <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Account Suspended <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Rejected Freelancers <span class="menu-label">141,220</span></a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Membership Settings</a></li>
+                <li><a href="#">Active Subscribers <span class="menu-label"></span></a></li>
+                <li><a href="#">Proposal Credit</a></li>
+                <li><a href="#">All Jobs <span class="menu-label">2,541,220</span></a></li>
+                <li><a href="#">Active Contracts <span class="menu-label">41,220</span></a></li>
+                <li><a href="#">Support Ticket <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Dispute Management <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Exam Management <span class="menu-label">1,220</span></a></li>
+                <li><a href="#">Manage Category</a></li>
+                <li><a href="#">Manage Skills</a></li>
+                <li><a href="#">Manage Hire Page</a></li>
+                <li><a href="#">Manage Category Page</a></li>
+                <li><a href="#">Freelancer By Country Page</a></li>
+                <li><a href="#">FAQ Management</a></li>
+                <li><a href="#">Legal Pages</a></li>
+                <li><a href="#">Bugs Report <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Staffs <span class="menu-label fill">541</span></a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Profit History</a></li>
+                <li><a href="#">Transection History</a></li>
+            </ul>
+        </div>
+        
+        <div class="site-wrapper">
+            <!-- header starts -->
+            <div class="header fixed-top">
+                <div class="header-area">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col h-100">
+                                <div class="header-left-section d-flex align-items-center h-100">
+                                    <div class="offcanvas-menu-trigger d-flex align-items-center">
+                                        <div class="menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="site-logo">
+                                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                                    </div>
+                                    <div class="mainmenu off-canvas-nav">
+                                        <ul>
+                                            <li class="menu-item-has-children">
+                                                <span class="menu-label">123</span>
+                                                <a href="#">Approvals</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Pending Freelancers <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Payments Approval</a></li>
+                                                    <li><a href="#">Bid credit payment</a></li>
+                                                    <li><a href="#">Subscription payment</a></li>
+                                                    <li><a href="#">Due Payment</a></li>
+                                                    <li><a href="#">Invoice Payment</a></li>
+                                                    <li><a href="#">Earning Approval <span class="dropdown-label">123</span></a></li>
+                                                    <li><a href="#">Pending KYC <span class="dropdown-label">123</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label alert-label">123</span><a href="#">Unpaid Invoice</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Withdrawals</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Nagative Balance</a>
+                                            </li>
+                                            <li>
+                                                <span class="menu-label">123</span><a href="#">Renewals</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header-right-section d-flex justify-content-end align-items-center h-100">
+                                    <div class="notification-link">
+                                        <a href="#"><i class="fas fa-bell"></i> <span class="count">1</span></a>
+                                    </div>
+                                    <div class="custom-dropdown dropdown">
+                                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/user-1.svg" alt="">
+                                        </button>
+                                        <div class="dropdown-menu" >
+                                            <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
+                                            <a href="#Profile"><i class="fas fa-user"></i> My Profile</a>
+                                            <a href="#Logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-trigger-wrap d-lg-none d-flex align-items-center">
+                                        <div class="main-menu-trigger">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header ends -->
+
+            <div class="divider"></div>
+
+            <!-- 
+                ======================
+
+                Don't Remove Any Class
+
+                =======================
+
+             -->
+            <!-- management-content-area starts -->
+            <div class="main-content all-freelancers-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                              <div class="section-table all-freelancers-table-section">
+                                <div class="table-header-section d-flex justify-content-between align-items-center">
+                                    <div class="left">
+                                        <h4 class="section-title">All Freelancers
+                                            <span class="freelancer-count rounded-pill">4,5121,385</span>
+                                        </h4>
+                                    </div>
+                                    <div class="right">Show
+                                         <div class="dropdown-wrap">
+                                                    <select name="" id="">
+                                                        <option value="1"> 1</option>
+                                                        <option value="2"> 2</option>
+                                                        <option value="3"> 3</option>
+                                                        <option value="4"> 4</option>
+                                                        <option value="5"> 5</option>
+                                                        <option value="6"> 6</option>
+                                                        <option value="7"> 7</option>
+                                                        <option value="8"> 8</option>
+                                                        <option value="9"> 9</option>
+                                                        <option selected value="10"> 10</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                        entries
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </div>
+                                <div class="table-content-section"> 
+                                    <table class="datatable table">
+                                        <thead class="datatable-head">
+                                            <tr class="datatable-row">
+                                                <th class="p-2" style="width: 10px;">
+                                                    <span class="tick-mark-btn form-check m-0 d-inline-block"><input type="checkbox" id="tickmark1" name="tickmark1" value="tickmark1"><label class="m-0" for="tickmark1"></label></span>
+                                                </th>
+                                                <th class="col1">Member Since</th>
+                                                <th class="col2"> Name</th>
+                                                <th class="col3">Username</th>
+                                                <th class="col4">Country</th>
+                                                <th class="col5 text-center">Balance</th>
+                                                <th class="col6"></th>
+                                                <th class="col7">Membership</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="datatable-body">
+                                            <tr class="datatable-row">
+                                                 <td class="p-2" style="width: 10px;">
+                                                    <span class="tick-mark-btn form-check m-0 d-inline-block"><input type="checkbox" id="tickmark2" name="tickmark2" value="tickmark2"><label class="m-0" for="tickmark2"></label
+                                               for="tickmark2"></label></span> </td>
+                                              
+                                                <td class="datatable-cell">apr 7, 2020, 4:29PM</td>
+                                                <td class="datatable-cell">
+                                                   Apurba D
+                                                </td>
+                                                <td class="datatable-cell">a purba0123</td>
+                                                <td class="datatable-cell">USA </td>
+                                                <td class="datatable-cell balance-cell text-center">
+                                                    <p class="rounded-pill suspend">
+                                                        Suspend <i class="fas fa-lock"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="datatable-cell"><i class="fas fa-ellipsis-h ellipsis"></i></td>
+                                                <td class="datatable-cell">
+                                                  Basic
+                                                </td>
+                                            </tr>
+                                            <tr class="datatable-row">
+                                                 <td class="p-2" style="width: 10px;">
+                                                    <span class="tick-mark-btn form-check m-0 d-inline-block"><input type="checkbox" id="tickmark3" name="tickmark3" value="tickmark3"><label class="m-0" for="tickmark3"></label
+                                               for="tickmark3"></label></span> </td>
+                                              
+                                                <td class="datatable-cell">apr 7, 2020, 4:29PM</td>
+                                                <td class="datatable-cell">
+                                                   Apurba D
+                                                </td>
+                                                <td class="datatable-cell">a purba0123</td>
+                                                <td class="datatable-cell">USA </td>
+                                                <td class="datatable-cell balance-cell text-center">
+                                                    <p class="rounded-pill deleted">
+                                                        Deleted <i class="fas fa-lock"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="datatable-cell"><i class="fas fa-ellipsis-h ellipsis"></i></td>
+                                                <td class="datatable-cell">
+                                                  Basic
+                                                </td>
+                                            </tr>
+                                            <tr class="datatable-row">
+                                                 <td class="p-2" style="width: 10px;">
+                                                    <span class="tick-mark-btn form-check m-0 d-inline-block"><input type="checkbox" id="tickmark4" name="tickmark4" value="tickmark4"><label class="m-0" for="tickmark4"></label
+                                               for="tickmark4"></label></span> </td>
+                                              
+                                                <td class="datatable-cell">apr 7, 2020, 4:29PM</td>
+                                                <td class="datatable-cell">
+                                                   Apurba D
+                                                </td>
+                                                <td class="datatable-cell">a purba0123</td>
+                                                <td class="datatable-cell">USA </td>
+                                                <td class="datatable-cell balance-cell text-center">
+                                                    <p class="rounded-pill rejected">
+                                                        Rejected <i class="fas fa-ban"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="datatable-cell"><i class="fas fa-ellipsis-h ellipsis"></i></td>
+                                                <td class="datatable-cell">
+                                                  Basic
+                                                </td>
+                                            </tr>
+                                            <tr class="datatable-row">
+                                                 <td class="p-2" style="width: 10px;">
+                                                    <span class="tick-mark-btn form-check m-0 d-inline-block"><input type="checkbox" id="tickmark5" name="tickmark5" value="tickmark5"><label class="m-0" for="tickmark5"></label
+                                               for="tickmark5"></label></span> </td>
+                                              
+                                                <td class="datatable-cell">apr 7, 2020, 4:29PM</td>
+                                                <td class="datatable-cell">
+                                                   Apurba D
+                                                </td>
+                                                <td class="datatable-cell">a purba0123</td>
+                                                <td class="datatable-cell">USA </td>
+                                                <td class="datatable-cell balance-cell text-center">
+                                                    <p class="rounded-pill active">
+                                                        Active <i class="fas fa-check"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="datatable-cell"><i class="fas fa-ellipsis-h ellipsis"></i></td>
+                                                <td class="datatable-cell">
+                                                  Basic
+                                                </td>
+                                            </tr>
+                                          
+                                        </tbody>
+                                    </table>
+                                       <div class="table-footer-section">
+                                  <nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link prev" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item ">
+      <a class="page-link next" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+                                </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <!-- management-content-area ends -->
+                    
+        </div>
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fas fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/jquery.nice-select.min.js"></script>      
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>    
+        
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
